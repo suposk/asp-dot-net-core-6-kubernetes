@@ -1,0 +1,15 @@
+#choco install azure-cli
+
+#login
+az login
+az login --tenant 1ff35017-cbf2-4700-9930-3210afb6182b
+#nothing az account set --subscription 33fb38df-688e-4ca1-8dd8-b46e26262ff8 
+
+#create the resource group in Azure
+az group create --name ps-aks --location westeurope
+
+#Create the cluster, this can take a few minutes
+az aks create -n ps-demo -g ps-aks --node-osdisk-type Ephemeral --node-osdisk-size 30 --network-plugin azure --generate-ssh-keys
+
+#Get the credentials merged in your local .kube file that is used by e.g. kubectl
+az aks get-credentials -n ps-demo -g ps-aks
