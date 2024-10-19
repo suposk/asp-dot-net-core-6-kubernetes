@@ -32,6 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "local-k8s", "local-k8s", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "remote-k8s", "remote-k8s", "{178886C8-D06B-468C-BDB1-146832DA9F08}"
 	ProjectSection(SolutionItems) = preProject
+		demos\remote-k8s\create-acr.txt = demos\remote-k8s\create-acr.txt
 		demos\remote-k8s\create-cluster.txt = demos\remote-k8s\create-cluster.txt
 	EndProjectSection
 EndProject

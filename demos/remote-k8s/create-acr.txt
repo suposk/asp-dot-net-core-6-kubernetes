@@ -1,0 +1,23 @@
+az acr create -n psgloboticketjan1 -g ps-aks --sku Standard #basic not supports anynoymous pull
+az acr update -n psgloboticketjan1 --anonymous-pull-enabled
+
+docker images
+
+frontend
+docker tag frontend:dev frontend:latest #optional
+docker tag frontend psgloboticketjan1.azurecr.io/frontend
+
+docker tag catalog:dev catalog:latest #optional
+docker tag catalog psgloboticketjan1.azurecr.io/catalog
+
+docker tag ordering:dev ordering:latest #optional
+docker tag ordering psgloboticketjan1.azurecr.io/ordering
+
+docker login psgloboticketjan1.azurecr.io
+un: psgloboticketjan1
+pw in azure portal > access keys
+
+docker push psgloboticketjan1.azurecr.io/frontend
+docker push psgloboticketjan1.azurecr.io/catalog
+docker push psgloboticketjan1.azurecr.io/ordering
+
