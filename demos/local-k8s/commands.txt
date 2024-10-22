@@ -1,0 +1,13 @@
+
+
+
+
+choco --version
+systeminfo
+
+ubectl version --client
+choco install kubernetes-cli
+choco install minikube
+
+choco uninstall minikube
+choco uninstall kubernetes-cli

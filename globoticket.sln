@@ -22,12 +22,17 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "local-k8s", "local-k8s", "{A78E1506-FA52-43CD-BB64-D7E96CB54337}"
 	ProjectSection(SolutionItems) = preProject
 		demos\local-k8s\catalog.yaml = demos\local-k8s\catalog.yaml
-		demos\local-k8s\cluster-role-binding.yml = demos\local-k8s\cluster-role-binding.yml
+		demos\local-k8s\commands.txt = demos\local-k8s\commands.txt
 		demos\local-k8s\dashboard.txt = demos\local-k8s\dashboard.txt
 		demos\local-k8s\frontend.yaml = demos\local-k8s\frontend.yaml
 		demos\local-k8s\ordering.yaml = demos\local-k8s\ordering.yaml
-		demos\local-k8s\service-account.yaml = demos\local-k8s\service-account.yaml
 		demos\local-k8s\sqlserver.yaml = demos\local-k8s\sqlserver.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "system", "system", "{245E12E7-639A-473B-8AB4-5ADF855080AA}"
+	ProjectSection(SolutionItems) = preProject
+		demos\local-k8s\cluster-role-binding.yml = demos\local-k8s\cluster-role-binding.yml
+		demos\local-k8s\service-account.yaml = demos\local-k8s\service-account.yaml
 	EndProjectSection
 EndProject
 Global
@@ -58,6 +63,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A78E1506-FA52-43CD-BB64-D7E96CB54337} = {5F41D798-4264-4D6A-A844-EC21D8EDCD5E}
+		{245E12E7-639A-473B-8AB4-5ADF855080AA} = {A78E1506-FA52-43CD-BB64-D7E96CB54337}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9F232D3-5386-4E57-B49F-7AF54A4A8843}
