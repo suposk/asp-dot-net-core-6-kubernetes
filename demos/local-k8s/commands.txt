@@ -1,6 +1,13 @@
+cd c:\Dev\GitHub\asp-dot-net-core-6-kubernetes\demos\local-k8s
+
+kubectl config get-contexts
 
 
+kubectl get pods 
+kubectl get pods -A
 
+kubectl describe pod
+kubectl describe pods -n defaul 
 
 choco --version
 systeminfo
